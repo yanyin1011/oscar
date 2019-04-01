@@ -1,0 +1,18 @@
+<!doctype html>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<html>
+    <head>
+        <title>Moonlight</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head> 
+
+    <body>
+
+            {% if movie %}
+
+                <p> <h2> Movie of this Year is <b> {{movie}} </b> </h2></p>
+
+
+            {% endif %}
+    </body>
+ </html>
