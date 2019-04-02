@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <head>
+        <title>Recent 5-year Oscar Movies</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='animate.css') }}">
+    </head>
+
+    <body>
+
+    	<p class="animated infinite slideInDown">Enter A Year . Search A Movie</p>    
+    	<div class='home'>
+    		<div id='contact-form'>
+    			<form method='post' action='/movie'>
+    				<input type='text' id='dob' name='dob' required='required'>
+    				<input type="submit" value="Submit" id="submit"/>
+    			</form>
+    		</div>
+    	</div>
+        <p><b>{{data}}</b></p>
+    </body>

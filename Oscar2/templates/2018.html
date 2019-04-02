@@ -1,0 +1,42 @@
+<!doctype html>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<html>
+    <head>
+        <title>The Shape of Water</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='2018.css') }}">
+        <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min 2.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='animate.css') }}">
+    </head> 
+
+    <body>
+
+            {% if movie %}
+
+                <p> <h2> <b> {{movie}} </b> </h2></p>
+
+
+            {% endif %}
+            <div class="shape">
+              	<p>Elisa is a mute, isolated woman who works as a cleaning lady in a hidden, high-security government laboratory in 1962 Baltimore. Her life changes forever when she discovers the lab's classified secret -- a mysterious, scaled creature from South America that lives in a water tank. As Elisa develops a unique bond with her new friend, she soon learns that its fate and very survival lies in the hands of a hostile government agent and a marine biologist.</p>
+              	<h1 class="animated infinite slideInDown">Click Me</h1>
+            </div>
+            <script>
+            	$('div').on('click', function() {
+            		$(this).toggleClass('show-description');
+            	});
+            </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min 2.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text></svg>
+
+
+    </body>
+ </html>

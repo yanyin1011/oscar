@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<title>Moonlight</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='owl.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='animate.css') }}">
+<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='tooltip.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='lightbox.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='lightbox.css') }}">
+<link id="main" rel="stylesheet" type="text/css" href="{{ url_for('static', filename='publisher.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+</head>
+
+<body>
+  <div style="text-align:center;">
+    <br>
+  <h class="heading"><span style="font-size:1.0cm "text-align:center;"><b>2017 Academy Award for Best Picture: Moonlight </b></span> </h>
+  </div>
+  <nav class="navbar navbar-default">
+  	<div class="container">
+
+  		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  			<ul class="nav navbar-nav navbar-right main-nav">
+  				<li><a href="" class="scrollto">Home</a></li>
+
+  			</ul>
+  		</div><!-- /.navbar-collapse -->
+  	</div><!-- /.container-fluid -->
+  </nav>
+
+  <section id="movie">
+  	<div class="container">
+  		<div class="row">
+
+  			<div class="col-md-6">
+            <div>
+              <div class="w3-content w3-section" style="max-width:500px">
+                <img class="mySlides" src="static/moonlight_1.jpg" style="width:100%">
+                <img class="mySlides" src="static/moonlight_2.jpg" style="width:100%">
+                <img class="mySlides" src="static/moonlight_3.jpg" style="width:100%">
+              </div>
+
+              <script>
+              var myIndex = 0;
+              carousel();
+
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+              }
+              </script>
+
+            </div>
+  			</div>
+  			<div class="col-md-6">
+  				<h2 class="heading wow animated fadeInUp">About Moonlight</h2>
+  				<h4 class="subheading wow animated fadeInUp">Moonlight is a 2016 American coming-of-age drama film written and directed by Barry Jenkins, based on Tarell Alvin McCraney's unpublished semi-autobiographical play In Moonlight Black Boys Look Blue.</h4>
+  				<p class="small wow animated fadeInUp">Story</p>
+  				<p class="small wow animated fadeInUp">Three time periods - young adolescence, mid-teen and young adult - in the life of black-American Chiron is presented. When a child, Chiron lives with his single, crack addict mother Paula in a crime ridden neighborhood in Miami. Chiron is a shy, withdrawn child largely due to his small size and being neglected by his mother, who is more concerned about getting her fixes and satisfying her carnal needs than taking care of him. Because of these issues, Chiron is bullied, the slurs hurled at him which he doesn't understand beyond knowing that they are meant to be hurtful. Besides his same aged Cuban-American friend Kevin, Chiron is given what little guidance he has in life from a neighborhood drug dealer named Juan, who can see that he is neglected, and Juan's caring girlfriend Teresa, whose home acts as a sanctuary away from the bullies and away from Paula's abuse. With this childhood as a foundation, Chiron may have a predetermined path in life, one that will only be magnified in terms...</p>
+  			</div>
+  		</div>
+  	</div>
+  </section>
+
+
+
+
+
+
+</body>
+</html>

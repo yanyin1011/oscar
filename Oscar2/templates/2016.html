@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<title>Spotlight</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='owl.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='animate.css') }}">
+<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='tooltip.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='lightbox.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='et-icons.css') }}">
+<link id="main" rel="stylesheet" type="text/css" href="{{ url_for('static', filename='publisher.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+</head>
+
+<body>
+  <div style="text-align:center;">
+    <br>
+  <h class="heading"><span style="font-size:1.0cm "text-align:center;"><b>2016 Academy Award for Best Picture: Spotlight </b></span> </h>
+  </div>
+  <nav class="navbar navbar-default">
+  	<div class="container">
+
+
+  		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  			<ul class="nav navbar-nav navbar-right main-nav">
+            <li><a action='' class="scrollto">Home</a></li>
+
+  			</ul>
+  		</div><!-- /.navbar-collapse -->
+  	</div><!-- /.container-fluid -->
+  </nav>
+
+  <section id="movie">
+  	<div class="container">
+  		<div class="row">
+
+  			<div class="col-md-6">
+            <div>
+              <div class="w3-content w3-section" style="max-width:500px">
+                <img class="mySlides" src="static/spotlight1.jpg" style="width:100%">
+                <img class="mySlides" src="static/spotlight2.jpg" style="width:100%">
+                <img class="mySlides" src="static/spotlight3.jpeg" style="width:100%">
+              </div>
+
+              <script>
+              var myIndex = 0;
+              carousel();
+
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+              }
+              </script>
+
+            </div>
+  			</div>
+  			<div class="col-md-6">
+  				<h2 class="heading wow animated fadeInUp">About The Spotlight</h2>
+  				<h4 class="subheading wow animated fadeInUp">Spotlight is a 2015 American biographical drama film directed by Tom McCarthy and written by McCarthy and Josh Singer.[4][5] The film follows The Boston Globe's "Spotlight" team, the oldest continuously operating newspaper investigative journalist unit in the United States,[6] and its investigation into cases of widespread and systemic child sex abuse in the Boston area by numerous Roman Catholic priests.</h4>
+  				<p class="small wow animated fadeInUp">Story</p>
+  				<p class="small wow animated fadeInUp">In 2001, editor Marty Baron of The Boston Globe assigns a team of journalists to investigate allegations against John Geoghan, an unfrocked priest accused of molesting more than 80 boys. Led by editor Walter "Robby" Robinson (Michael Keaton), reporters Michael Rezendes (Mark Ruffalo), Matt Carroll and Sacha Pfeiffer interview victims and try to unseal sensitive documents. The reporters make it their mission to provide proof of a cover-up of sexual abuse within the Roman Catholic Church.</p>
+  			</div>
+  		</div>
+  	</div>
+  </section>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.onepagenav.js"></script>
+<script src="js/core.js"></script>
+<script src="js/tooltip.js"></script>
+<script src="js/jquery.form-validator.js"></script>
+<script src="js/preloader.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

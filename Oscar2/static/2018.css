@@ -1,0 +1,38 @@
+body{
+  background-image: url(shape.jpeg);
+}
+h2{
+  font-family: 'Playball', cursive;
+  font-size: 75px;
+  text-align: center;
+  margin: 140px 0 0 0;
+  color: white;
+}
+
+p {
+  color: rgba(255,255,255,1);
+  text-align: justify;
+  margin-left: 400px;
+  margin-right: 400px;
+  opacity: 0;
+  line-height: 28px;
+  margin-top: 30px;
+  border-radius: 12px;
+  font-family: 'Jura', sans-serif;
+
+}
+
+h1{
+  color: rgba(255,255,255,1);
+  text-align: center;
+  opacity: 1;
+  line-height: 28px;
+  font-family: 'Playball', cursive;
+  margin-top: 100px;
+}
+
+.show-description p {
+  opacity: 1;
+  background-color:rgba(0,0,0,0.5);
+}
+
